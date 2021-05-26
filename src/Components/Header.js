@@ -10,7 +10,7 @@ const Header = ({ data }) => {
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
-          <a href={network.url}>
+          <a href={network.url} target="_blank">
             <i className={network.className}></i>
           </a>
         </li>
@@ -21,41 +21,51 @@ const Header = ({ data }) => {
   return (
     <header id="home">
       <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+        <a
+          className="mobile-btn"
+          href="#nav-wrap"
+          title="Show navigation"
+          target="_blank"
+        >
           Show navigation
         </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
+        <a
+          className="mobile-btn"
+          href="#home"
+          title="Hide navigation"
+          target="_blank"
+        >
           Hide navigation
         </a>
 
         <ul id="nav" className="nav">
           <li className="current">
-            <a className="smoothscroll" href="#home">
+            <a className="smoothscroll" href="#home" target="_blank">
               Home
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#about">
+            <a className="smoothscroll" href="#about" target="_blank">
               About
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#resume">
+            <a className="smoothscroll" href="#resume" target="_blank">
               Resume
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#portfolio">
+            <a className="smoothscroll" href="#portfolio" target="_blank">
               Works
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#testimonials">
+            <a className="smoothscroll" href="#testimonials" target="_blank">
               Testimonials
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#contact">
+            <a className="smoothscroll" href="#contact" target="_blank">
               Contact
             </a>
           </li>
@@ -76,7 +86,7 @@ const Header = ({ data }) => {
       </div>
 
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <a className="smoothscroll" href="#about" target="_blank">
           <i className="icon-down-circle"></i>
         </a>
       </p>

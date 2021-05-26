@@ -5,7 +5,7 @@ const Footer = ({ data }) => {
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
-          <a href={network.url}>
+          <a href={network.url} target="_blank">
             <i className={network.className}></i>
           </a>
         </li>
@@ -22,14 +22,23 @@ const Footer = ({ data }) => {
           <ul className="copyright">
             <li>
               Made by{" "}
-              <a title="PAPA" href="http://www.papareact.com/">
-                PAPA
+              <a
+                title="PAPA"
+                target="_blank"
+                href="http://saifmohamedo.github.io/"
+              >
+                SAIF
               </a>
             </li>
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
+          <a
+            className="smoothscroll"
+            target="_blank"
+            title="Back to Top"
+            href="#home"
+          >
             <i className="icon-up-open"></i>
           </a>
         </div>
